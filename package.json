@@ -1,0 +1,40 @@
+{
+  "name": "utb-nft-contracts",
+  "version": "0.0.1",
+  "description": "Contracts examle for UTB students",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test --network hardhat",
+    "account": "npx hardhat accounts",
+    "deploy": "npx hardhat run scripts/deploy.js --network matic",
+    "mint": "npx hardhat run scripts/mint.js --network matic",
+    "baseuri": "npx hardhat run scripts/baseuri.js --network matic",
+    "verify": "npx hardhat run scripts/verify.js --network matic",
+    "transfer-nft": "npx hardhat transfer-nft --network matic",
+    "deploy-mumbai": "npx hardhat run scripts/deploy.js --network mumbai",
+    "mint-mumbai": "npx hardhat run scripts/mint.js --network mumbai",
+    "multiply-mumbai": "npx hardhat run scripts/multiply.js --network mumbai",
+    "baseuri-mumbai": "npx hardhat run scripts/baseuri.js --network mumbai",
+    "verify-mumbai": "npx hardhat run scripts/verify.js --network mumbai",
+    "transfer-nft-mumbai": "npx hardhat transfer-nft --network mumbai",
+    "deploy-local": "npx hardhat run scripts/deploy.js --network localhost",
+    "mint-local": "npx hardhat run scripts/mint.js --network localhost",
+    "transfer-nft-local": "npx hardhat transfer-nft --network localhost"
+  },
+  "author": "DOBBYLABS",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.7",
+    "hardhat": "^2.9.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "minimist": "^1.2.6"
+  }
+}
